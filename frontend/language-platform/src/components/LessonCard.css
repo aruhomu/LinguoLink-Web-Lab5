@@ -1,0 +1,79 @@
+.lesson-card-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-left: 6px solid #cbd5e1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.lesson-card-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Бордери для рівнів */
+.level-a1-border { border-left-color: #2e7d32; }
+.level-a2-border { border-left-color: #ef6c00; }
+.level-b1-border { border-left-color: #1565c0; }
+.level-b2-border { border-left-color: #7b1fa2; }
+
+.lesson-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.lesson-card-title {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #2c3e50;
+}
+
+.lesson-card-level {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Кольори для рівнів */
+.level-a1 { background: #e8f5e9; color: #2e7d32; border: 1px solid #2e7d32; }
+.level-a2 { background: #fff3e0; color: #ef6c00; border: 1px solid #ef6c00; }
+.level-b1 { background: #e3f2fd; color: #1565c0; border: 1px solid #1565c0; }
+.level-b2 { background: #f3e5f5; color: #7b1fa2; border: 1px solid #7b1fa2; }
+
+.lesson-card-description {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.lesson-card-footer {
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.start-btn {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%;
+  transition: background 0.2s;
+}
+
+.start-btn:hover {
+  background-color: #34495e;
+}

@@ -1,0 +1,91 @@
+.lessons-page {
+  padding: 0; /* Використовуємо внутрішній контейнер для падінгів */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column; /* Centered on small screens */
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin-top: 20px;
+  position: relative;
+  z-index: 900;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 600px) {
+  .page-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.filter-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.filter-section label {
+  font-weight: 600;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.filter-select {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 2px solid #edf2f7;
+  font-size: 0.95rem;
+  background-color: #f8fafc;
+  cursor: pointer;
+  color: #2c3e50;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  min-width: 120px;
+}
+
+.filter-select:hover {
+  border-color: #cbd5e0;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #2c3e50;
+  background-color: white;
+}
+
+.lessons-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 0 20px 40px;
+}
+
+.no-results {
+  text-align: center;
+  grid-column: 1 / -1;
+  padding: 60px;
+  color: #94a3b8;
+  font-size: 1.1rem;
+  background: white;
+  border-radius: 12px;
+  border: 2px dashed #e2e8f0;
+}
